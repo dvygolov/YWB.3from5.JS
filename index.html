@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>3from5 TEST</title>
+  <style>
+    html,
+    body,
+    div,
+    p,
+    h1,
+    a,
+    span,
+    img,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      font-size: 100%;
+      font-weight: normal;
+      background: transparent;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* body */
+    body {
+      line-height: 1;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="bagsBlock"></div>
+    <div id="realForm" class="order-form">HERE SHOULD BE YOUR FORM CODE!</div>
+  </div>
+
+  <script src="ywb3from5.js"></script>
+  <script>
+    init3from5({
+      selectors: {
+        bags: "#bagsBlock",
+        form: "#realForm",
+      },
+      texts: {
+        title: "Try to open 3 identical images and get your discount!",
+        tries: "The attempts remain:",
+      },
+    });
+  </script>
+</body>
+
+</html>

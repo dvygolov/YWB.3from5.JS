@@ -1,0 +1,279 @@
+.bags-fade-out {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.order-form-lottery * {
+  background: unset !important;
+}
+
+.order-form-lottery {
+  padding: unset !important;
+  width: unset !important;
+  max-width: unset !important;
+  margin-top: 25px;
+}
+
+.order-form-lottery .card .card-counter {
+  text-align: center !important;
+}
+
+.order-form-lottery .card {
+  margin: 0 auto !important;
+  width: 100% !important;
+  max-width: 460px !important;
+  padding: 25px !important;
+  border-radius: 20px !important;
+  border: 3px solid #5b2361 !important;
+  background: #c066ff
+    repeating-linear-gradient(
+      45deg,
+      #ce0071,
+      #9b2766 10px,
+      #860049 10px,
+      #e73a98 20px
+    ) !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.order-form-lottery .card.spin-wrapper {
+  padding: 25px !important;
+  border: 3px solid #5b2361 !important;
+}
+
+.order-form-lottery .card-instructions {
+  color: #fff !important;
+  background: unset !important;
+  font-size: 32px !important;
+  max-width: 433px !important;
+  text-align: center !important;
+  margin: 0 auto 40px !important;
+}
+
+.order-form-lottery .card-instructions h1 {
+  font-size: 30px !important;
+}
+
+.order-form-lottery .card-instructions div {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block !important;
+}
+
+.order-form-lottery .card-instructions svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.order-form-lottery .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  border-radius: 20px !important;
+  border: 3px solid #5b2361 !important;
+  overflow: hidden !important;
+  background-color: #fff !important;
+  background-image: url("dots.svg") !important;
+  background-size: auto;
+}
+
+.order-form-lottery .card-counter,
+.order-form-lottery .counter-attempts {
+  font-size: 15px !important;
+}
+
+.order-form-lottery .card-item {
+  height: 100px !important;
+  padding: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transition: 0.3s ease-in !important;
+  cursor: pointer !important;
+}
+
+.order-form-lottery .card-item div {
+  position: absolute !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.order-form-lottery .card-item svg {
+  width: 72px !important;
+  height: 72px !important;
+}
+
+.order-form-lottery .card-item .card-item-reload,
+.order-form-lottery .card-item .card-item-sale {
+  opacity: 0 !important;
+  z-index: 1 !important;
+}
+
+.order-form-lottery .card-item-sale {
+  position: relative !important;
+  line-height: 0 !important;
+}
+
+.order-form-lottery .card-item-sale p {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 25px !important;
+  line-height: 39px !important;
+  text-align: center !important;
+  color: #fff !important;
+  position: absolute !important;
+  top: 17px !important;
+  left: 15px !important;
+}
+
+.order-form-lottery .card-item.sale .card-item-sale {
+  opacity: 1 !important;
+}
+
+.order-form-lottery .card-item.sale .card-item-cover {
+  opacity: 0 !important;
+}
+
+.order-form-lottery .card-item.glow:after {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  width: 72px !important;
+  height: 72px !important;
+  top: 20px !important;
+  z-index: -1 !important;
+  background: rgba(173, 250, 76, 0.72) !important;
+  filter: blur(10px) !important;
+}
+
+.order-form-lottery .card-item:hover {
+  transform: scale(1.2) !important;
+}
+
+.order-form-lottery .card-item-sale-high,
+.card-item-sale-medium,
+.card-item-sale-low {
+  display: none !important;
+}
+
+.order-form-lottery .card-item.sale-high .card-item-sale-high {
+  display: block !important;
+}
+
+.order-form-lottery .card-item.sale-medium .card-item-sale-medium {
+  display: block !important;
+}
+
+.order-form-lottery .card-item.sale-low .card-item-sale-low {
+  display: block !important;
+}
+
+.order-form-lottery .card-item-sale .card-item-sale-high,
+.order-form-lottery .card-item-sale .card-item-sale-medium,
+.order-form-lottery .card-item-sale .card-item-sale-low {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.order-form-lottery .card-item-sale .card-item-sale-high,
+.order-form-lottery .card-item-sale .card-item-sale-medium,
+.order-form-lottery .card-item-sale .card-item-sale-low {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-indent: 0 !important;
+  color: #fff !important;
+  z-index: 999999 !important;
+}
+
+.order-form-lottery .card-instructions h1,
+.order-form-lottery .card-instructions p {
+  color: #fff !important;
+}
+
+.order-form-lottery .card-instructions h1 {
+  line-height: 1.2 !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .order-form-lottery .card-item svg {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .order-form-lottery .card-item {
+    height: 75px !important;
+  }
+
+  .order-form-lottery .card-instructions {
+    margin: 0 auto 10px !important;
+  }
+
+  .order-form-lottery .card-instructions h1 {
+    font-size: 24px !important;
+    margin-top: 0 !important;
+  }
+
+  .order-form-lottery .card-instructions div {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .order-form-lottery .card-item.glow:after {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .order-form-lottery .card-item-sale p {
+    font-size: 20px !important;
+    line-height: 20px !important;
+    top: 16px !important;
+    left: 8px !important;
+  }
+}
+
+.card-item-sale img {
+  width: 80px;
+}
+
+.card-item-cover img {
+  width: 62px;
+}
+
+.card-item-reload img {
+  width: 62px;
+}
+@media screen and (max-width: 425px) {
+  .card-item-sale img,
+  .card-item-reload img,
+  .card-item-cover img {
+    width: 50px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 296px;
+  }
+
+  .order-form-lottery .card-item {
+    width: 80px;
+    display: inline !important;
+  }
+
+  .card-item-sale img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .order-form-lottery .card-item.glow::after {
+    background: none !important;
+  }
+}
