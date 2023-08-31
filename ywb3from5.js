@@ -61,6 +61,7 @@ function init3from5(params) {
         target = target.parentNode;
       }
     });
+    fixAnchors(bagsBlock);
 
     const attempt = 5;
     const counterElem = document.querySelector(".counter-attempts");
@@ -111,13 +112,20 @@ function init3from5(params) {
       setTimeout(function () {
         bagsBlock.style.display = "none";
         formBlock.style.display = "block";
-        window.scrollTo({
-          top: formBlock.getBoundingClientRect().top,
-          behavior: "smooth",
-        });
-
+        fixAnchors(formBlock);
         startTimer();
       }, 2000);
+    }
+
+    function fixAnchors(element) {
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          element.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
     }
   });
 }
